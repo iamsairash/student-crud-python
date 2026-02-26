@@ -8,9 +8,10 @@ if __name__ == "__main__":
     # pushpa = create_student("Pushpa", "pushpa@gmail.com", 23)
     # rishi = create_student("Rishi Raj", "rishiraj@gmail.com", 18)
 
-    python = create_course("Python 101", "This is python course.", 50)
-    math = create_course("Mathematics", "This is math course", 45)
+    # python = create_course("Python 101", "This is python course.", 50)
+    # math = create_course("Mathematics", "This is math course", 45)
 
     print(get_all_courses())
-    
+    print(get_all_students())
+
     

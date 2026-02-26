@@ -1,12 +1,16 @@
 import psycopg2
 from psycopg2.extras import RealDictCursor
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 DB_CONFIG = {
-    "host": "localhost",
-    "database": "student_db",
-    "user": "postgres",
-    "password": "Hellopsql",
-    "port": 5432
+    "host": os.getenv("DB_HOST"),
+    "database": os.getenv("DB_NAME"),
+    "user": os.getenv("DB_USER"),
+    "password": os.getenv("DB_PASSWORD"),
+    "port": os.getenv("DB_PORT")
 }
 
 def get_connection():
